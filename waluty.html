@@ -1,0 +1,52 @@
+<!-- currency-page.html -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Meta tagi i tytuł strony -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantor</title>
+    <!-- Połączenie z arkuszem stylów CSS i JavaScriptem -->
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <!-- Skrypty do pobierania danych -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Nagłówek strony -->
+    <header>
+        <h1>Kantorek kursy</h1>
+    </header>
+<!-- Nawigacja strony -->
+    <nav>
+        <a href="index.html">Kalkulator</a>
+        <a href="waluty.html">Kursy Walut</a>
+        
+    
+    </nav>
+<!-- Sekcja z aktualnymi kursami walut -->
+    <section id="currency-rates">
+        <h2>Aktualne Kursy Różnych Walut</h2>
+ <!-- Tabela z kursami walut -->
+        <table id="currency-table">
+            <thead>
+                <tr>
+                    <th>Waluta</th>
+                    <th>Nazwa</th>
+                    <th>Kurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Kursy walut zostaną dodane dynamicznie tutaj -->
+            </tbody>
+        </table>
+    </section>
+   
+
+    
+
+</body>
+</html>

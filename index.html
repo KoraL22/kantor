@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Meta tagi i tytuł strony -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantor</title>
+<!-- Połączenie z arkuszem stylów CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Połączenie z plikiem skryptu JavaScript -->
+    <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Skrypty do pobierania danych i aktualizacji czasu -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+   <!-- Nagłówek strony -->
+    <header>
+        <h1>Kantorek walut</h1>
+    </header>
+<!-- Nawigacja strony -->
+    <nav>
+        <a href="index.html">Kalkulator</a>
+        <a href="waluty.html">Kursy Walut</a>
+        
+     
+    </nav>
+
+<!-- Główna zawartość strony -->
+    <div class="glowne">
+      
+      <!-- Formularz kalkulatora walut -->
+        <input type="number" id="input_wpisz" class="label" />
+        <select id="wybor_waluty" class="wybor-style">
+          <!-- Opcje wyboru walut -->
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="CHF">CHF</option>
+
+          <option value="THB">THB</option>
+          <option value="AUD">AUD</option>
+          <option value="NZD">NZD</option>
+
+          <option value="CAD">CAD</option>
+          <option value="CNY">CNY</option>
+          <option value="MYR">MYR</option>
+
+          <option value="BRL">BRL</option>
+          <option value="PHP">PHP</option>
+          <option value="ILS">ILS</option>
+    
+        </select>
+        <button id="licz" class="button-style"><img src="coin.png" alt="przycisk liczenia" ></button>
+        <div>
+          <span id="wynik"></span>
+        </div>  
+        <div class="error-style">
+          <p id="error"></p>
+        </div>
+        
+    </div>
+
+    <img src="banknot.jpg" alt="zdjęcie banknotu" class="banknot">
+    
+  <img src="banknot1.jpg" alt="zdjęcie banknotu" class="banknot1">
+
+<div class="additional-content">
+  <h2>O Stronie</h2>
+  <p class="p_stronka">Kantor Onlinie służy do przeliczania różnych walut o różnych kursach na polskie złotówki.
+    Strona posiada również kursy wszystkich walut w podstronie "Kursy Walut", tam również można znaleść jake ma rozszeżenie skrót waluty
+
+  </p>
+</div>
+
+<!-- Dodana sekcja z wykresem historii kursów i dodatkową zawartością -->
+<section id="wykres-historii">
+
+  <div class="historia-content">
+      <h2>Kursy</h2>
+      <p class="p_stronka">Kurs walutowy – cena danej waluty wyrażona w innej walucie (relacja wymienna jednej waluty na inną).
+         Miejscem transakcji, na którym przedmiotem są waluty krajowe, jest rynek walutowy.</p>
+  </div>
+  <div class="historia-content">
+    <h2>Przydatne linki</h2>
+  
+    <p class="p_stronka">jak patrzeć na kursy walut oraz je przeliczać:<br><a href="https://kantoralex.pl/blog/jak-czytac-i-przeliczac-kursy-walut/" target="_blank">Link</a></p>
+    <p class="p_stronka"> <a href="https://businessinsider.com.pl/gielda/czym-jest-cena-zakupy-waluty/7qdy91q" target="_blank">Link</a></p>
+</div>
+</section>
+
+<section id="obsluga-klienta">
+  <h2>Obsługa Klienta</h2>
+  <p class="p_stronka">Skontaktuj się z nami w razie pytań lub problemów.</p>
+  <!-- Dodaj odpowiednie dane do obsługi klienta -->
+  <p class="p_stronka">Numer telefonu: +48 123 123 123</p>
+  <p class="p_stronka">Adres e-mail: info@kantorek.pl</p>
+</section>
+          <footer>
+            <p > Kantor by M_G | aktualny-czas: <span id="aktualny_czas"></span></p>
+        </footer>
+    
+        
+        
+        
+
+
+   
+</body>
+</html>

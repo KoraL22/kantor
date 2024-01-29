@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content=""/>
+  <meta name="generator" content="kss-node"/>
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="kss-assets/kss.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+
+</head>
+<body id="kss-node" class="kss-fullscreen-mode">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-2.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">2</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-2-1-2" class="kss-section kss-section--depth-3 is-fullscreen">
+
+      <div class="kss-style">
+        <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-2-1-2">
+            <span class="kss-title__ref">
+              2.1.2
+              <span class="kss-title__permalink-hash">
+                  #permalink
+              </span>
+            </span>
+            #Kantor/podstrony Ogólne style dla całej strony:
+          </a>
+        </h3>
+
+
+          <div class="kss-description">
+            <p>#Kantor/podstrony
+Ogólne style dla całej strony:</p>
+<p>html, body:
+Ustawienia dla całego dokumentu. Style dla ciała strony: marginesy, czcionka, kolor</p>
+<p>@font-face:
+Dodanie niestandardowej czcionki.</p>
+<p>header:
+style dla nagłówka strony: padding, tekst, tło</p>
+<p>nav:
+style dla nawigacji</p>
+<p>a - style dla linku: marginesy, dekoracja tekstu, kolor
+a:hover - style dla linku po najechniu: zmiana koloru</p>
+<p>Main:</p>
+<p>Style dla głównej zawartości</p>
+<p>.glowne - style dla głownego bloku gdzie znajduje sie kalkulator</p>
+<p>.label -  style dla formularza wpisywania wysokości danej waluty</p>
+<p>.wybor-style - style dla opcji wyboru waluty</p>
+<p>.button-style - style dla przycisku obliczającego</p>
+<p>.button-style:hover - style po najechaniu (gif)</p>
+<p>.error-style - wyświetlanie błedu</p>
+<p>span#wynik:
+style dla wyniu obliczeń</p>
+<p>div.additional-content:
+sekcja informacyjna strony</p>
+<p>section#wykres-historii:
+sekcja opisowa do strony kantoru</p>
+<p>section#obsluga-klienta:
+sekcja obsługi klienta do strony kantoru</p>
+<p>footer strony:</p>
+<p>sekcja ze stopka strony</p>
+<p>model box-sizing:</p>
+<p>*: Ustawienia dla wszystkich elementów.</p>
+<p>Układ dla mniejszych ekranow</p>
+<p>@media only screen and (max-width: 600px):
+responsywnosc dla ekranow mniejszych niz 600 px</p>
+<p>@media only screen and (max-width: 768px):
+responsywnosc dla ekranow mniejszych niz 768 px</p>
+
+          </div>
+
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>style.css</code>, line 1
+        </div>
+
+    </div>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

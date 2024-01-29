@@ -1,0 +1,370 @@
+ /*
+#Kantor/podstrony
+Ogólne style dla całej strony:
+
+html, body: 
+Ustawienia dla całego dokumentu. Style dla ciała strony: marginesy, czcionka, kolor
+
+@font-face: 
+Dodanie niestandardowej czcionki.
+
+header:
+style dla nagłówka strony: padding, tekst, tło
+
+nav:
+style dla nawigacji
+
+a - style dla linku: marginesy, dekoracja tekstu, kolor
+a:hover - style dla linku po najechniu: zmiana koloru
+
+ Main:
+          
+Style dla głównej zawartości
+
+.glowne - style dla głownego bloku gdzie znajduje sie kalkulator
+
+.label -  style dla formularza wpisywania wysokości danej waluty
+
+.wybor-style - style dla opcji wyboru waluty
+
+.button-style - style dla przycisku obliczającego
+
+.button-style:hover - style po najechaniu (gif) 
+
+.error-style - wyświetlanie błedu
+
+span#wynik: 
+style dla wyniu obliczeń
+
+div.additional-content: 
+sekcja informacyjna strony
+
+section#wykres-historii: 
+sekcja opisowa do strony kantoru
+
+section#obsluga-klienta: 
+sekcja obsługi klienta do strony kantoru
+
+footer strony:
+
+sekcja ze stopka strony
+
+model box-sizing:
+
+*: Ustawienia dla wszystkich elementów.
+
+Układ dla mniejszych ekranow
+
+@media only screen and (max-width: 600px): 
+responsywnosc dla ekranow mniejszych niz 600 px
+
+@media only screen and (max-width: 768px):
+responsywnosc dla ekranow mniejszych niz 768 px
+
+Styleguide 2.1.2
+
+*/
+       /*
+       Body:
+
+      Style dla ciała strony: marginesy, czcionka, kolor
+       */
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: lavenderblush;
+           
+        }
+          /*
+          Header:
+
+          style dla nagłówka strony: padding, tekst, tło
+          
+          */
+        header {
+            background-image:url(zdj2.jpg);
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        /*
+        nav:
+
+        style dla nawigacji
+
+        a - style dla linku: marginesy, dekoracja tekstu, kolor
+        a:hover - style dla linku po najechniu: zmiana koloru
+
+        */ 
+        nav {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        nav a {
+          color: black;
+          text-decoration: none;
+          margin: 0 15px;
+      }
+      nav a:hover{
+       
+        background-color: red;
+      }
+        /*
+        Footer:
+
+        Style dla stopki: pozycje tesktu i bloku
+        
+        */
+        footer{
+            
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          text-align: center;
+        }
+
+/*
+*: 
+
+Resetowanie stylów dla wszystkich elementów 
+
+*/
+        * {
+            box-sizing: border-box;  
+          }
+          /*
+          Main:
+          
+          Style dla głównej zawartości
+
+          .glowne - style dla głownego bloku gdzie znajduje sie kalkulator
+          .label -  style dla formularza wpisywania wysokości danej waluty
+          .wybor-style - style dla opcji wyboru waluty
+          .button-style - style dla przycisku obliczającego
+          .button-style:hover - style po najechaniu (gif) 
+
+          */
+          .glowne {
+            width: 80%;
+            min-height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin: 20px auto;
+            font-size: 20px;
+            color:orangered;
+            background-color: lavender;
+          }
+           
+          .label {
+            resize: none;
+  max-width: 300px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid rgb(255, 128, 0);
+  color: black;
+          }
+          
+          .wybor-style {
+            height: 40px;
+  color: black;
+  font-size: 20px;
+  background-color: LightBlue;
+  border: 1px solid rgb(255, 128, 0);
+  animation: button;
+  animation-duration: 10s;
+  transition: transform 5s;
+  animation-iteration-count: infinite;
+          }
+          
+          .button-style {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+            border: 1px solid rgb(255, 128, 0);
+            animation: button;
+            animation-duration: 10s;
+            transition: transform 5s;
+            animation-iteration-count: infinite;
+          }
+         
+          .button-style:hover{
+            transform: scale(0.5);
+          }
+          
+          @keyframes button {
+            0% {
+                background-color: rgb(255, 0, 0);
+              }
+              50% {
+                background-color: rgb(255, 179, 0);
+              }
+              100% {
+                background-color: rgb(0, 255, 225);
+              }
+    
+          }
+          /*
+          src:
+
+          style dla zdjęć na stronie
+
+          .banknot - style dla zdjęcia banknotu
+          .banknot1 - style dla 2 zdjęcia banknotu
+
+          */
+          .banknot{
+            float: left;
+    display: block; 
+    max-width: 100%;
+    height: auto;  
+
+          }
+          .banknot1{
+            float: right;
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+          }
+         
+          @media (max-width: 600px) {
+            .banknot,
+            .banknot1 {
+                /*display: none;*/
+                width: 30%;
+                height: 30%;
+                
+            }
+        }
+        /* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+  .glowne {
+      width: 90%; /* Dostosuj szerokość dla mniejszych ekranów */
+  }
+}
+
+/* Dodatkowe dostosowanie dla jeszcze mniejszych ekranów, jeśli potrzebne */
+@media (max-width: 576px) {
+  .glowne {
+      font-size: 16px; /* Dostosuj rozmiar tekstu dla mniejszych ekranów */
+  }
+}
+
+     /* 
+     div:
+
+     Style dla dodatkowej zawartości strony:
+
+     .additional-content - style dla bloku z informacjami dla użytkownika
+     
+     */
+.additional-content {
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+ 
+
+}
+
+
+/* Dodane style dla sekcji "Historia Kursów" */
+#historia-kursow {
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Dodane style dla sekcji "Obsługa Klienta" */
+#obsluga-klienta {
+  padding: 20px;
+  text-align: center;
+  background-color: #e1e1e1;
+}
+/* style1.css */
+
+/* Dodany styl dla sekcji z historią kursów */
+#wykres-historii {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* 
+blok
+
+.historia-content - Dodany styl dla bloku z historią kursów 
+
+*/
+.historia-content {
+  flex: 1;
+  max-width: calc(50% - 20px); /* Ustaw szerokość na 50%, odjęta szerokość marginesu */
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: justify;
+ 
+}
+
+
+
+
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+  #wykres-historii {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+}
+/*
+h2
+
+Style dla nagłówków strony
+
+*/
+h2{
+  font-style:oblique;
+  color: rgb(251, 192, 0);
+  text-align: center;
+}
+/*
+p
+
+.p_stornka -style dla akapitów strony
+
+*/
+.p_stronka{
+  color:rgb(65, 24, 0);
+  font-family: 'Arial', cursive;
+  text-align: center;
+}
+
+
+/* 
+media
+
+Responsywność dla mniejszych ekranów 
+
+*/
+@media (max-width: 768px) {
+  .historia-content {
+    max-width: calc(100% - 20px); /* Na mniejszych ekranach ustaw szerokość na 100%, odjęta szerokość marginesu */
+  }
+}
+
+
+
